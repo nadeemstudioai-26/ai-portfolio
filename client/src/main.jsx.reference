@@ -1,0 +1,14 @@
+// REFERENCE ONLY — compare against your existing src/main.jsx, don't
+// blindly overwrite it. The only things this Stage 1 UI actually needs
+// from main.jsx are: mounting <App />, and importing "./index.css".
+
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
