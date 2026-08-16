@@ -20,24 +20,8 @@ const PROJECTS = [
     liveUrl: null,
     placeholder: false,
   },
-  {
-    title: "Placeholder Project Two",
-    description:
-      "Future project slot — not a real project yet. Replace this title, description, and tags once the next project is built.",
-    tech: ["Python", "Backend"],
-    githubUrl: null,
-    liveUrl: null,
-    placeholder: true,
-  },
-  {
-    title: "Placeholder Project Three",
-    description:
-      "Future project slot — not a real project yet. Replace this title, description, and tags once the next project is built.",
-    tech: ["Machine Learning"],
-    githubUrl: null,
-    liveUrl: null,
-    placeholder: true,
-  },
+  
+  
 ];
 
 function ProjectCard({ project }) {
@@ -126,3 +110,4 @@ export default function Projects() {
     </section>
   );
 }
+
