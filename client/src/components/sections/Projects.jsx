@@ -7,14 +7,15 @@ import GithubIcon from "../ui/icons/GithubIcon";
 // TODO: swap in the exact repo URL once you're ready to link it publicly.
 // Pointing at the GitHub profile for now so the button stays real and
 // clickable rather than a dead/fabricated link.
-const AI_TRADING_ASSISTANT_REPO = "https://github.com/nadeemstudioai-26";
+const AI_TRADING_ASSISTANT_REPO = "https://github.com/nadeemstudioai-26/AI-Trading-Assistant";
 
 const PROJECTS = [
   {
     title: "AI Trading Assistant",
     description:
-      "A Python project applying AI/ML and data analysis techniques to trading and chart-related data. Focused on processing market data and building AI/ML-driven analysis rather than a finished trading product — details below reflect the project's current scope, not a live or production trading system.",
-    tech: ["Python", "AI/ML", "Data Analysis"],
+     "An AI-assisted trading analysis project built with Python, focused on chart processing, market-data analysis, and automated detection of trading patterns. The project explores practical AI/ML techniques for turning chart data into structured insights and signals. It is a research and development project, not a live automated trading system.",
+    tech: ["Python", "Computer Vision", "Chart Analysis"],
+    image: "/detected-candles.png",
     githubUrl: AI_TRADING_ASSISTANT_REPO,
     liveUrl: null,
     placeholder: false,
@@ -45,6 +46,13 @@ function ProjectCard({ project }) {
 
   return (
     <div className="flex flex-col rounded-xl border border-ink-border bg-ink-surface p-6 transition-colors hover:bg-ink-hover">
+      {project.image && (
+    <img
+    src={project.image}
+    alt={`${title} project screenshot`}
+    className="mb-5 h-48 w-full rounded-lg border border-ink-border object-cover"
+  />
+)}      
       <div className="flex items-start justify-between gap-3">
         <h3 className="font-display text-lg font-semibold text-fg">
           {title}
