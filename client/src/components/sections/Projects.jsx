@@ -98,7 +98,7 @@ export default function Projects() {
         <SectionHeading
           index="03"
           title="Projects"
-          description="A selection of what I'm building. Placeholder cards are clearly marked and ready to swap in real work."
+          description="A selection of what I'm building."
         />
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
