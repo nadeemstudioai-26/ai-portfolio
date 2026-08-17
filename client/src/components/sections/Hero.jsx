@@ -49,6 +49,12 @@ export default function Hero() {
               <Button href={GITHUB_URL} variant="ghost" icon={GithubIcon}>
                 GitHub
               </Button>
+              <Button
+              href="https://www.linkedin.com/in/nadeem-uddin-1b0651247/"
+              variant="ghost"
+            >
+              LinkedIn
+            </Button>
             </div>
           </div>
 
